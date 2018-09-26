@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!-- Smooth scroll -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <title>Tanja Čučurović - junior web developer</title>
+</head>
+<body>
+    
+    <div class="bg-body">
+      <!-- Header start -->
+      <nav class="navbar-fixed-top header">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#top">Tanja Čučurović</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="meni-item w3-animate-left "><a href="#information" class="page-scroll">Info</a></li>
+                <li class="meni-item w3-animate-left"><a href="#experience">Iskustvo</a></li>
+                <li class="meni-item w3-animate-left"><a href="#skills">Veštine</a></li>
+                <li class="meni-item w3-animate-left"><a href="#about">O Meni</a></li>
+                <li class="meni-item w3-animate-left"><a href="#contact">Kontakt</a></li>
+                </li>
+              </ul>
+              <ul class="navbar-nav navbar-right ">
+                <li class="cvDownload"><a href="cv.pdf" download >Preuzmi  CV<span class="cvDownloadIcon glyphicon glyphicon-download-alt pull-right"></span></a></li>
+                <li class="language"><a href="index.html" rel="en-EN"><img style="width: 40px"  src="images/english.png"/></a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav>
+      <!-- Header End -->
+        <div id="top" class="container page">
+          <div class="row rowUp">
+            <div class="col-md-12 profile-col-img">
+              <img class="img-circle img-responsive center-block" src="images/profileImage.jpg"/>
+            </div>
+            <div class="col-md-12 profile-col-name">
+              <div class="name"><h1>Tanja Čučurović</h1></div>
+              <div class="text">
+                <h2>Dobrodošli, Hvala na poseti!</h2>
+                <div>
+                        <div><p>Ja sam Tanja iz Novog Sada, Junior Veb Developer i tražim nove poslovne prilike.<br> 
+                            Projekte pogledajte na mom <a href="https://github.com/TanjaCucurovic" target="_blank" >GitHub</a> profilu.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row rowDown">
+            <div class="col-md-12">
+             <div id="information" class="anchor"></div>
+              <div  class="info"><h2>Informacije</h2>
+                <ul class="info-data">
+                  <li class="data"><i class="fa fa-user"></i> Tanja Čučurović </li>
+                  <li class="data"><i class="fa fa-globe"></i> Novi Sad</li>
+                  <li class="data"><i class="fa fa-envelope"></i><a href="mailto:tanja.cucurovic@gmail.com" class="emailInfo"> tanja.cucurovic@gmail.com</a></li>
+                </ul>
+              </div>
+            </div>
+            </div>
+            <hr>
+            <div class="row">
+             <div class="col-md-12">
+              <div id="experience" class="anchor"></div>
+                <div class="info"><h2>Obuke/Kursevi/Seminari</h2>
+                    <p text-align="center">S obzirom da sam uspešno završila obuku iz Veb programiranja, 
+                     stekla sam kompeticije potrebne za Junior programera u oblasti razvoja Veb aplikacija u Java programskom jeziku i Angular 6 platformi.
+                     Izučavala sam sledeće teme:</p>
+                    <ol class="steps">
+                     <li>Osnove razvoja informacionih sistema
+                    <p>Proceduralno i Objektno programiranje u programskom jeziku Java,
+                            rad sa relacionim bazama podataka i programski jezik SQL,
+                            modelovanje podataka u informacionim sistemima
+                            XML, Git alat za kontrolu verzija</p>
+                     </li>
+                    <li>Osnove Veb Programiranja
+                    <p>HTTP protokol, klijent-server arhitektura, HTML, CSS i JavaScript</p>
+                    </li>
+                    <li>Razvoj savremenih aplikacija
+                        <p>Programiranje višeslojnih veb aplikacija korišćenjem Java 
+                        (Maven, Spring, JPA, REST, SpringSecurity) i naprednih klijentskih tehnologija (Angular)</p>
+                </li>
+              </ol>
+            </div>
+          </div> 
+        </div>
+        <hr>
+          <div class="row skills" >
+           <div class="col-md-12">
+             <div id="skills" class="anchor"></div>
+              <h2>Veštine</h2></div>
+          </div>
+          <div class="row skills">
+            <div class="flex-wrapper">
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart orange">
+                        <path class="circle-bg"
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path class="circle"
+                        stroke-dasharray="65, 100"
+                        d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="18" y="20.35" class="percentage">65%</text>
+                    </svg>
+                    <p>HTML/CSS</p>
+                </div>
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart orange">
+                        <path class="circle-bg"
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path class="circle"
+                        stroke-dasharray="55, 100"
+                        d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="18" y="20.35" class="percentage">55%</text>
+                    </svg>
+                    <p>JAVASCRIPT/JQUERY</p>
+                </div>
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart orange">
+                        <path class="circle-bg"
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path class="circle"
+                        stroke-dasharray="55, 100"
+                        d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="18" y="20.35" class="percentage">55%</text>
+                    </svg>
+                    <p>ANGULAR 6</p>
+                </div>
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart orange">
+                        <path class="circle-bg"
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path class="circle"
+                        stroke-dasharray="55, 100"
+                        d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="18" y="20.35" class="percentage">55%</text>
+                    </svg>
+                    <p>JAVA/MYSQL</p>
+                </div>
+            </div>
+          </div>
+          <hr>
+          <div  class="row">
+            <div class="col-md-12">
+             <div id="about" class="anchor"></div>
+              <div class="about"><h2>O Meni</h2></div>
+              <ol class="steps">
+                    <li>Veb Programiranje - Aleph ICT<br>
+                      Obuka omogućuje sticanje bazičnih znanja iz programiranja, softverskog inženjerstva i veb programiranja, tipično zahtevana na IT tržištu.
+                      Sastoji se iz dva dela - uvodnog i naprednog modula.
+                      <ul class="skills-bullets">
+                        <li>Uvodni modul: Proceduralno programiranje, Objektno programiranje, Baze Podataka, Osnove Veb protokola</li>
+                        <li>Napredni modul: Alati za upravljanje projektom, Serverski deo Veb aplikacija, Klijentski deo Veb aplikacija baziran na Angular 6 platformi</li>
+                      </ul>
+                    </li>
+                    <li>Angular 6 - Udemy online kurs <br>
+                        Ovaj kurs obuhvata sve od Podešavanja do Razvijanja:
+                        <ul class="skills-bullets"> 
+                            <li>Sve o komponentama, direktivama, uslugama, oblicima, pristupu Http,
+                                Autentikacija, Optimizacija ugla aplikacije sa modulima i kompilacija putem mreže</li>
+                        </ul>
+                    </li>
+                    <li>Veb Dizajn za početnike: kodiranje u HTML & CSS - Udemy online kurs
+                     <ul class="skills-bullets">
+                        <li>Razvijanje veb stranice </li>
+                        <li>Dodavanje zanimljivih animacija i efekata pomoću CSS3</li>
+                        <li>Podrška bilo kojoj veličini uređaja sa dizajnom koji odgovara (prilagođen za mobilne uređaje)</li> 
+                        <li>Korišćenje modernih šablona za izradu Veb sajtova</li>
+                     </ul>
+                    </li>
+               </ol>
+            </div>
+          </div>
+          <div id="contact" class="row contact">
+           <div class="col-md-12">
+            <h2>Kontakt</h2>
+            <h3>Nadam se uspešnoj saradnji!</h3><br>
+            <p>Možete me kontaktirati putem sledećih mreža, klikom na ikonice ispod</p><br>
+            <div class= "footer">
+                <a href="https://github.com/TanjaCucurovic" target="_blank" class="github"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.facebook.com/tanja.cucurovic" target="_blank" class="facebook"><i class="fab fa-facebook-square"></i></a>
+                <a href="mailto:tanja.cucurovic@gmail.com" class="email"><i class="fas fa-envelope"></i></a>
+              <div class="row">
+                <div class="copy"><p>&copy Tanja Čučurović</p></div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+          
+      
+      
+      
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+</body>
+</html>
