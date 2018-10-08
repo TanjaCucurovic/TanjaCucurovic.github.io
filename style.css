@@ -2,11 +2,19 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     text-shadow: 4px 4px 5px rgba(150, 150, 150, 1);
+    color: #195F74;
+}
+/* Name */
+
+h1{
+    font-size: 42px; 
+    text-align: center; 
 }
 
-h2, h3 {
-    color: black;
-    text-shadow: 4px 4px 5px rgba(150, 150, 150, 1);
+/* Welcome message */
+h2{
+    text-align: center;
+    font-size: 32px;
 }
 
 body, p, ul, ol, table {
@@ -37,7 +45,7 @@ body, p, ul, ol, table {
     cursor: pointer; 
     color: black; 
     border-radius: 5px;
-    background-color:rgba(232, 190, 100, 0.57);
+    background-color:rgba(120, 163, 175, 0.57);
     -webkit-box-shadow:5px 5px 11px 0px rgba(50, 50, 50, 0.7);
     -moz-box-shadow:5px 5px 11px 0px rgba(50, 50, 50, 0.7);
     box-shadow:5px 5px 11px 0px rgba(50, 50, 50, 0.7);  
@@ -56,7 +64,7 @@ body, p, ul, ol, table {
 
 .meni-item:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-    background-color:rgba(253, 206, 132, 1);    
+    background-color:rgba(120, 163, 175, 0.57);    
 }
 .cvDownload {
     padding-top: 5px;
@@ -87,53 +95,27 @@ body, p, ul, ol, table {
 
 /* Page */
 .page{
-    background-color:#fafafa;
+    background-color:#f8f8f8;
     background-position: center;
 }
 .rowUp{
-    background-image: url(images/page-backgroundImg.jpg);
-    background-size: cover; 
+    background-image: url(images/hero-background.png);
+    background-repeat: repeat; 
 }
 
 /* Profile image */
-.profile-col-name {
-    padding: 0px;
-}
+
 .img-circle{
     margin-top: 80px;
     width: 250px;
     height: 250px;
+    object-fit: cover;
     -webkit-box-shadow:7px 7px 5px 0px rgba(50, 50, 50, 0.24);
     -moz-box-shadow:7px 7px 5px 0px rgba(50, 50, 50, 0.24);
     box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.24);
 	-moz-border-radius:190px;
 	-webkit-border-radius:190px;
 	border-radius:190px;
-}
-
-/* Name */
-.name{
-    height: 100px;
-    box-sizing:border-box;
-}
-.name h1{
-    color: #fdce84;
-    text-shadow: 2px 2px 4px #000000;
-    font-size: 55px;
-    padding-top: 20px;
-    padding-left: 15px;
-    text-align: center;
-    margin-top: 0px;
-    
-}
-
-/* Welcome message */
-.text h2{
-    color: #fdce84;
-    text-align: center;
-    font-size: 45px;
-    text-shadow: 2px 2px 4px #000000;
-    margin-top: 0px; 
 }
 .text p{
     font-size: 20px;
@@ -149,7 +131,7 @@ body, p, ul, ol, table {
     display: block;
     height: 115px; /*same height as header*/
     margin-top: -115px; /*same height as header*/
-    visibility: hidden;
+    
   }
 
 /* information */
@@ -199,8 +181,9 @@ ul.skills-bullets li {
   }
  ol.steps>li::before {
     content: counter(inst);
-    background: #fdce84;
-    color: black;
+    background: #914454;
+    color: #f8f8f8;
+    font-weight: 500;
     font-size: 1em;
     font-weight: 700;
     font-style: italic;
@@ -216,7 +199,7 @@ ul.skills-bullets li {
     width: 1.35em;
     position: absolute; 
     transition: all 0.2s ease-in-out;
-    text-shadow: 3px 3px 5px rgba(150, 150, 150, 1);
+    
 }
 @media (min-width: 33em) {
  ol.steps>li:before {
@@ -244,7 +227,7 @@ ul.skills-bullets li {
   
 .circle-bg {
     fill: none;
-    stroke: #7b7979;
+    stroke: #D6D2D0;
     stroke-width: 3.8;
   }
   
@@ -262,7 +245,7 @@ ul.skills-bullets li {
  }
   
 .circular-chart.orange .circle {
-    stroke: #fdce84;
+    stroke: #195F74;
   }
 
 .percentage {
@@ -352,7 +335,7 @@ ul.skills-bullets li {
     }
 .meni-item{
     width: 300px;
-    background-color: rgba(225, 178, 76, 0.59);
+    background-color: rgba(120, 163, 175, 0.57);
 }
 .cvDownload{
     padding-bottom: 10px;
