@@ -387,17 +387,10 @@ li {
     font-family: Ubuntu;
     text-align: center;
 }
-
-
-
 /* Projects */
 
-
-
 .projectCard img {
-    max-width: 300px !important;
-    max-height: 250px;
-    background-size: cover;
+    max-width: 250px !important;
     background-repeat: no-repeat;
     object-fit: cover;
     box-sizing: border-box;
@@ -406,7 +399,6 @@ li {
 
 .projectCard {
     width: 320px;
-
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -534,15 +526,12 @@ li {
     list-style-type: none;
 
 }
-
-
 .certificatesData li p {
     font: 14px/1.5 Ubuntu;
     font-size: 16px;
     color: rgb(51, 51, 51);
 
 }
-
 .big-bold {
     position: relative;
     font: bold 35px/1.5 Ubuntu;
@@ -565,8 +554,6 @@ li {
     padding-top: 5px;
 
 }
-
-
 @media screen and (max-width: 768px) {
 
 
